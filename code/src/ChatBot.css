@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bg-light: #f9f9f9;
+  --text-dark: #333;
+  --accent: #007bff; /* Azul moderno */
+  --accent-hover: #0056b3;
+  --border-light: #eee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}

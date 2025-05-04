@@ -1,0 +1,36 @@
+.message {
+    background-color: var(--border-light);
+    color: var(--text-dark);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    max-width: 70%;
+    animation: messageAppear 0.2s ease-out;
+}
+  
+.message.bot {
+    background-color: var(--accent);
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 3px;
+  }
+  
+.message.user {
+    background-color: #e0f7fa; 
+    color: var(--text-dark);
+    align-self: flex-end;
+    border-bottom-right-radius: 3px;
+}
+  
+@keyframes messageAppear {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

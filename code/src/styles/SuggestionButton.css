@@ -1,0 +1,16 @@
+.suggestion-button {
+    background-color: white;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+  
+.suggestion-button:hover {
+    background-color: var(--accent);
+    color: white;
+}

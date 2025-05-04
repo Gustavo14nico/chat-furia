@@ -1,0 +1,32 @@
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 0;
+    background-color: white;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px 0 0 0; 
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, right 0.3s ease-in-out; 
+    z-index: 1001;
+    flex-direction: column;
+}
+  
+.chat-container.open {
+    display: flex;
+    height: 80vh;
+    right: 0; 
+}
+  
+.messages-container {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--bg-light);
+}
