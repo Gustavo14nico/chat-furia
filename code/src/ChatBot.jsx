@@ -20,6 +20,17 @@ const knownTopics = {
       "Horários de jogos?",
       "Últimos resultados da FURIA",
       "Próximo confronto",
+      "contato com a furia",
+      "histórico da furia",
+      "quem são os jogadores da furia?",
+    ],
+  },
+  "contato com a furia": {
+    text: "Quer trocar uma ideia direta com a tropa da FURIA? Cola aqui no Whats: 👉 [https://wa.me/5511993404466](https://wa.me/5511993404466)\n\nSó chega no grau, manda um 'Salve' e já era!",
+    suggestions: [
+      "Simulador de torcida",
+      "Próximas partidas",
+      "Últimos resultados",
     ],
   },
   "horários de jogos": {
@@ -32,15 +43,36 @@ const knownTopics = {
     ],
   },
   "próximos jogos de cs:go": {
-    text: "Fique ligado! Nosso time de CS:GO tem os seguintes confrontos agendados:\n- 07 de Maio, 15:00 BRT vs Natus Vincere (BLAST Premier Spring Groups)\n- 10 de Maio, 18:30 BRT vs G2 Esports (IEM Dallas Qualifiers)\nQuer saber mais detalhes sobre alguma dessas partidas?",
+    text: "Fique ligado! Nosso time de CS:GO tem o(s) seguinte(s) confronto(s) agendado(s):\n- 10 de Maio, as 01:00 (Horario de Brasilia) contra a equipe The MongolZ pela PGL Astana\n- Quer saber mais detalhes sobre alguma dessa(s) partida(s) ou onde assistir?",
     suggestions: [
-      "Detalhes do jogo contra Natus Vincere",
-      "Onde assistir o BLAST Premier?",
+      "Detalhes do jogo contra The MongolZ",
+      "Onde assistir o(s) jogo(s)?",
       "Line-up da FURIA",
     ],
   },
+  "Detalhes do jogo contra The MongolZ": {
+    text: "O jogo sera em decidido em uma série melhor de três mapas (MD3),\n- válida pela fase de grupos do torneio PGL Astana 2025.\n- Esta marcada para esse sabado dia 10, venha nos apoiar na busca de mais um titulo!!",
+    suggestions: [
+      "Onde assistir o(s) jogo(s)?",
+      "Line-up da FURIA",
+    ],
+  },
+  "Onde assistir o(s) jogo(s)?": {
+    text: "O jogo sera transmitido pelo canal da FURIA no Youtube e no canal da PGL Astana 2025",
+    suggestions: [
+      "Line-up da FURIA",
+    ],
+  },
+  "Line-up da FURIA": {
+    text: "Confira quem vai estar na linha de batalha do proximo jogo:\n- Gabriel 'FalleN' Toledo\n- Yuri 'yuurih' Santos\n- Kaike 'KSCERATO' Cerato\n- Mareks 'YEKINDAR' Gaļinskis\n- molodoy \n- juntamente com o nosso professor Sidde e seu auxiliar Hepa \n #DaleFURIA 🖤",
+    suggestions: [
+      "Próximos jogos de VALORANT",
+      "Próximos jogos de LoL",
+      "Próximos jogos de RL",
+    ],
+  },
   "próximos jogos de valorant": {
-    text: "A cavalaria do VALORANT está pronta para a batalha! Os próximos jogos são:\n- 05 de Maio, 20:00 BRT vs LOUD (VCT Americas League)\n- 08 de Maio, 17:00 BRT vs Sentinels (VCT Americas League)\nAlguma dessas partidas te interessa em especial ou quer saber sobre o VCT Americas League?",
+    text: "A cavalaria do VALORANT está pronta para a batalha! Os próximos jogos são:\n- 05 de Maio, 20:00 (Horario de Brasilia) contra a LOUD valida pelo VCT Americas League \n- 08 de Maio, 17:00 BRT vs Sentinels (VCT Americas League)\nQuer informações sobre algumas dessas partidas ou quer saber onde assistir?",
     suggestions: [
       "Detalhes do jogo contra LOUD",
       "Histórico contra Sentinels",
@@ -48,20 +80,92 @@ const knownTopics = {
       "Informações sobre o campeonato",
     ],
   },
-  "próximos jogos de lol": {
-    text: "A FURIA no League of Legends está se preparando para dominar o Rift! Confira os próximos horários:\n- 12 de Maio, 19:00 BRT vs paiN Gaming (CBLOL Academy)\n- 15 de Maio, 21:30 BRT vs RED Canids (CBLOL Academy)\nO que mais você gostaria de saber sobre o nosso time de LoL?",
+  "Detalhes do jogo contra LOUD": {
+    text: "O jogo sera em decidido em uma série melhor de três mapas (MD3),\n- válida pela fase de grupos do torneio VCT Americas League 2025.\n- Esta marcada para esse sabado dia 05, venha nos apoiar na busca de mais um titulo!!",
     suggestions: [
-      "Próximo split do CBLOL",
+      "Onde assistir o(s) jogo(s)?",
+      "Line-up da FURIA",
+    ],
+  },
+  "Histórico contra Sentinels": {
+    text: "A FURIA e Sentinels ja se enfrentaram 10 vezes, com o saldo de 6 vitórias para a FURIA e 4 para o Sentinels",
+    suggestions: [
+      "Onde assistir o(s) jogo(s)?",
+      "Line-up da FURIA",
+    ],
+  },
+  "Elenco do VALORANT": {
+    text: "Confira quem vai estar na linha de batalha do proximo jogo:\n- Khalil 'khalil' Schmidt Faur Awad\n- Ilan 'havoc' Eloy\n- Olavo 'heat' Marcelo\n- Rafael 'raafa' Lima \n- Luis 'pryze' Henrique\n- Nosso tecnico da equipe de VAVA e nada mais nada menos Pedro 'peu' Lopes,\n e seu fiel assistente Lucas 'lukzera' Soares.\n #DaleFURIA 🖤",
+    suggestions: [
+      "Próximos jogos de VALORANT",
+      "Próximos jogos de LoL",
+    ],
+  },
+  "Informações sobre o campeonato": {
+    text: "O VCT Americas League 2025 é um torneio de VALORANT que acontece no mes de maio, e conta com 12 equipes participantes, sendo 10 times classificados e 2 wildcards. A competição é dividida em 3 fases: grupos, playoffs e final. As equipes são distribuídas em 3 grupos de 4 times, onde cada time joga contra os outros times do seu grupo. As duas melhores equipes de cada grupo passam para o playoffs, onde os confrontos são decididos em melhor de 3 séries. A final é disputada em melhor de 5 séries.",
+    suggestions: [
+      "Próximos jogo(s) de VALORANT",
+      "Próximos jogo(s) de LoL",
+      "Próximos jogo(s) de RL",
+      "Próximos jogo(s) de CS:GO",
+    ],
+  },
+  "próximos jogos de lol": {
+    text: "A FURIA no League of Legends está se preparando para dominar o Rift! Confira o(s) próximo(s) horário(s):\n- 11 de maio, 11:00 (horario de brasilia) vs Fluxo pelo LTA South 2025 Split 2\nO que mais você gostaria de saber sobre o nosso time de LoL?",
+    suggestions: [
+      "Detalhes do jogo contra Fluxo",
       "Jogadores em destaque no Academy",
       "Estratégias da equipe",
     ],
   },
-  "próximos jogos de rl": {
-    text: "Os mestres do Rocket League da FURIA estão a todo vapor! Anote aí os próximos jogos:\n- 06 de Maio, 22:00 BRT vs Team Liquid (RLCS NA Spring Open)\n- 09 de Maio, 19:30 BRT vs G2 Esports (RLCS NA Spring Open)\nTem alguma pergunta sobre a nossa participação no cenário de Rocket League?",
+  "Detalhes do jogo contra Fluxo": {
+    text: "O jogo sera em decidido em uma série melhor de três mapas (MD3),\n- válida pela fase de grupos do torneio LTA South 2025 Split 2.\n- Esta marcada para esse sabado dia 11, venha nos apoiar na busca de mais um titulo!!",
+    suggestions: [
+      "Jogadores em destaque no Academy",
+      "Estratégias da equipe",
+    ],
+  },
+  "Jogadores em destaque no Academy": {
+    text: "Os jogadores em destaque da FURIA no Academy são:\n- Top: Guilherme 'GUIGO' Ruiz\n- Support: Gabriel 'JoJo' Dzelme de Oliveira\n- Mid: Arthur 'Tutsz' Peixoto Machado\n- Jungle:  Pedro 'Tatu' Seixas\n- ADC: Andrey 'Ayu' Saraiva \n- Coach:  Thinkcard\n- Assistente: furyz \n- Pra cima deles FURIA!!",
+    suggestions: [
+      "Estratégias da equipe",
+    ],
+  },
+  "Estratégias da equipe": {
+    text: "A FURIA no CBLOL sempre foi aquela equipe que curte jogar\n com comp de late game, eles buscam escalar bem com campeões como Jinx e Azir, e sempre focam muito\n em controlar os objetivos do mapa, tipo dragões e arauto.\n O early game não é muito agressivo, o jungler foca\n mais em garantir que nada fuja do controle. Ultimamente, temos tentado algo mais ousado,\n pegando campeões com mais pressão no começo, tipo Ahri e Tristana, pra surpreender nossos adversários \n#DaleFURIA 🖤",
+    suggestions: [
+      "próximos jogos de lol",
+      "próximos jogos de cs:go",
+      "próximos jogos de valorant",
+      "próximos jogos de RL",
+    ],
+  },
+  "próximos jogos de RL": {
+    text: "Os mestres do Rocket League da FURIA estão a todo vapor! Anote aí o(s) próximo(s) horário(s):\n- 06 de Maio, 22:00 BRT vs Team Liquid (RLCS NA Spring Open)\n- 09 de Maio, 19:30 BRT vs G2 Esports (RLCS NA Spring Open)\nTem alguma pergunta sobre a nossa participação no cenário de Rocket League?",
     suggestions: [
       "Últimos campeonatos de RL",
       "Melhores momentos da FURIA no RL",
       "Quem são os craques do RL?",
+    ],
+  },
+  "Últimos campeonatos de RL": {
+    text: "Nos últimos tempos, a nossa equipe de Rocket League tem\n arrasado nas competições internacionais! Em março de 2025,\n a FURIA ficou com o 3º lugar no RLCS 2025 - Birmingham\n Major, um dos maiores torneios, e venceu times pesados\n como o Team Vitality por 4 a 3. 🙌\n\nAlém disso, estamos em uma sequência de vitórias incrível,\n com 5 partidas ganhas seguidas e uma taxa de vitória de\n 100% nos últimos 30 dias! 🔥\n\nFique ligado nos próximos jogos e resultados\n por aqui mesmo\n Vamos junto, FURIA! 🦁💛",
+    suggestions: [
+      "Melhores momentos da FURIA no RL",
+      "Quem são os craques do RL?",
+    ],
+  },
+  "Melhores momentos da FURIA no RL": {
+    text: "Confira os melhores momentos da FURIA no RL:\n A jornada da FURIA no Rocket League tem sido incrível! 🦁🚀\n🏆 Campeões do Gamers8 2022 FURIA levou o título em um torneio internacional!\n⚔️ Vitória sobre a Team Vitality no RLCS Major Vitória emocionante por 3 a 2!\n🌍 Top 4 no Mundial de Rocket League 2022 FURIA fez história chegando nas semifinais como a primeira equipe sul-americana!\n🔥 Sequência de 5 vitórias seguidas \n Fase impressionante com 100% de vitórias nos últimos jogos!\nVamos continuar com tudo, FURIA! 💛🦁",
+    suggestions: [
+      "Quem são os craques do RL?",
+    ],
+  },
+  "Quem são os craques do RL?": {
+    text: "Os craques da FURIA no Rocket League são eles:\n -Yan 'yanxnz' Nolasco\n -Gabriel 'Lostt' Souza Buzon\n -Arthur 'Drufinho' Langsch Miguel\n -Mateus 'STL' Santos Tornilio Lemos",
+    suggestions: [
+      "Últimos resultados da FURIA",
+      "Próximos jogos de RL",
     ],
   },
   "últimos resultados da furia": {
@@ -73,11 +177,12 @@ const knownTopics = {
     ],
   },
   "próximo confronto": {
-    text: "O nosso próximo desafio será contra Natus Vincere no dia 07 de Maio às 15:00 BRT. A partida será válida pelo BLAST Premier Spring Groups. Quer saber mais sobre o adversário ou o campeonato?",
+    text: "De qual modalidade você quer saber o próximo confronto?",
     suggestions: [
-      "Histórico de confrontos contra Na'Vi",
-      "Sobre o BLAST Premier Spring Groups",
-      "Expectativas para o jogo",
+      "próximos jogos de CS:GO",
+      "próximos jogos de VALORANT",
+      "próximos jogos de LoL",
+      "próximos jogos de RL",
     ],
   },
   "histórico da furia": {
@@ -86,6 +191,31 @@ const knownTopics = {
       "Primeiro título da FURIA",
       "A trajetória no IEM Katowice 2023",
       "Jogadores lendários da FURIA",
+    ],
+  },
+  "Primeiro título da FURIA": {
+    text: "O primeiro título da FURIA foi conquistado em 2018, quando a equipe de CS:GO foi campeã da Gamers Club Liga Profissional - Série A com o placar de \nFURIA 2 x 0 YeaH! Gaming. A vitória foi incrível e marcou a ascensão da FURIA\n como uma das principais equipes de CS:GO do mundo.",
+    suggestions: [
+      "A trajetória no IEM Katowice 2023",
+      "Jogadores lendários da FURIA",
+    ],
+  },
+  "A trajetória no IEM Katowice 2023": {
+    text: "🦁 Fala, FURIOSO! Tá querendo saber da nossa caminhada na IEM Katowice, né? Cola comigo que eu te conto rapidinho:\n\nA gente já tentou levantar o caneco lá em Katowice algumas vezes, mas ainda tá engasgado…\nÉ um dos campeonatos mais casca-grossa do CS, e a disputa sempre é pesada. Bora pro resumão:\n\n🔹 2020: Tentamos colar na fase principal, mas caímos no Play-In. Ainda era o começo da nossa jornada internacional.\n\n🔹 2021: Conseguimos entrar na fase de grupos! Jogamos contra uns times brabos, mas infelizmente não deu pra passar pros playoffs.\n\n🔹 2022: Chegamos mais fortes, fizemos boas partidas, mas ainda ficamos na fase de grupos. Faltou pouco, mano!\n\n🔹 2023: Foi dureza. Acabamos eliminados no Play-In de novo. Ano de altos e baixos pra gente.\n\n🔹 2024 e 2025 (CS2): Ainda estamos tentando achar o ritmo certo no Katowice com o CS novo. Estamos no corre pra voltar mais fortes e, quem sabe, meter um topzera logo logo.\n\n⚔️ Ainda não veio o título, mas não falta raça!\nSegue com a gente que a história tá só começando.\n#DaleFURIA 🖤,🔹 2023: Foi dureza. Acabamos eliminados no Play-In de novo. Ano de altos e baixos pra gente.\n\n🔹 2024 e 2025 (CS2): Ainda estamos tentando achar o ritmo certo no Katowice com o CS novo. Estamos no corre pra voltar mais fortes e, quem sabe, meter um topzera logo logo.\n\n⚔️ Ainda não veio o título, mas não falta raça!\nSegue com a gente que a história tá só começando.\n#DaleFURIA 🖤",
+    suggestions: [
+      "Jogadores lendários da FURIA",
+    ]
+  },
+  "Jogadores lendários da FURIA": {
+    text: "🦁 Quer saber quem são os jogadores mais lendários da história da FURIA? Então segura essa lista braba:\n🔥 KSCERATO – Desde 2018 no bonde. É o clutch master, o monstro que segura a bomba sozinho e ainda leva geral!\n🔥 yuurih – Parceiro de guerra do KSCERATO. Joga MUITO, sempre consistente e decisivo nas horas que importam.\n🔥 arT – O cérebro da FURIA. IGL com o estilo mais doido do cenário. Rush de AWP? Ele faz.\n🔥 VINI – Foi o cara da raça e do suporte. Nunca brilhou nas estatísticas, mas sempre jogou pelo time. Ídolo da torcida!\n🔥 HEN1 – Passagem curta, mas marcante. AWP quente, clutchador e dono de highlight.\n\n🏅 Menções Honrosas:\n– drop: segurou a bronca numa fase de transição.\n– chelo e FalleN: tão escrevendo a história agora no CS2! A lenda e o showman juntos, dá bom hein?\n\nFURIA é mais que time, é legado.\n#DaleFURIA 🖤",
+    suggestions: [
+      "Primeiro título da FURIA",
+      "A trajetória no IEM Katowice 2023",
+      "Últimos resultados da FURIA",
+      "Próximos jogos de CS:GO",
+      "Próximos jogos de VALORANT",
+      "Próximos jogos de LoL",
+      "Próximos jogos de RL",
     ],
   },
   "quem são os jogadores da furia?": {
